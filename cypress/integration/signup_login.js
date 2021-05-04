@@ -10,7 +10,7 @@ describe("Signup stest", () => {
   describe("UI tests", () => {
     beforeEach(() => {
       cy.log("Email: " + email);
-      cy.log("|Password: " + password);
+      cy.log("Password: " + password);
       cy.visit("http://localhost:3000/#/");
       cy.get(".cdk-overlay-backdrop").click(-50, -50, { force: true });
       cy.get("#navbarAccount").click();
